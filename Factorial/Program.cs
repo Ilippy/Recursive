@@ -8,9 +8,10 @@
     }
 
     // F(n) = n!; 5! = 1 * 2 * 3 * 4 * 5 = 120; F(1) = 1; F(0) = 1;
+    // Factorial(5)= 5 * Factorial(4) = 5 * 4 * Factorial(3) = 5 * 4 * 3 * Factorial(2) = 5 * 4 * 3 * 2 * 1;
     static int Factorial(int n)
     {
-        if (n == 0) return 1;
+        if (n == 1) return 1;
         else return n * Factorial(n-1);
     }
 
